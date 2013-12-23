@@ -24,7 +24,7 @@
 # components.
 
 # Support the plain, High-Res Cam, and Full HD variants
-ifneq ($(filter gee geehrc geefhd,$(TARGET_BOOTLOADER_BOARD_NAME)),)
+ifneq ($(filter gee geehrc geefhd geevl04e,$(TARGET_BOOTLOADER_BOARD_NAME)),)
 
 LOCAL_PATH := $(call my-dir)
 
