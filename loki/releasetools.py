@@ -28,5 +28,4 @@ def FullOTA_InstallEnd(info):
   info.script.AppendExtra('package_extract_file("boot.img", "/tmp/boot.img");')
   info.script.Mount("/system")
   info.script.AppendExtra('assert(run_program("/system/bin/loki.sh") == 0);')
-  info.script.AppendExtra('delete("/system/bin/loki.sh");')
   info.script.Unmount("/system")
